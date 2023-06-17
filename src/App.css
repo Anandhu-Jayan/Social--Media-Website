@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+
+.navBar {
+  width: 100vw;
+  background-color: #4F46E5;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+}
+
+.Link {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  margin-left: 10px;
+  
+}
+.navBarHome{
+  margin-left: 20px;
+}
+
+
+#userpfp {
+  border: 2px solid white;
+  border-radius: 45px;
+  width: 45px;
+  vertical-align: middle
+}
+
+.usercard {
+  font-family: 'Rubik', sans-serif;
+  display: inline-block;
+  font-size: larger;
+  margin-left: 10px;
+  margin-right: 5px;
+
+}
+
+.rightNav {
+  height: 100%;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.login {
+  text-align: center;
+}
+.logoutButton{
+  padding: 5px 15px;
+  font-size: large;
+  font-family: 'Rubik', sans-serif;
+  margin-right: 21px;
+  border-radius: 55px;
+ 
+  background-color: #4F46E5;
+  border:2px solid white;
+  color:white;
+  margin-left: 5px;
+}
+.logoutButton:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #4F46E5;
+}
+#signin,
+#postbutton {
+
+  font-family: 'Rubik', sans-serif;
+  font-size: large;
+  padding: 5px 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+.createpost {
+  text-align: center;
+}
+
+#titleinput,
+#descriptioninput {
+  height: 40px;
+  width: 400px;
+  font-family: 'Rubik', sans-serif;
+  font-size: medium;
+  margin: 10px 0;
+  resize: none;
+}
+
+#descriptioninput {
+  height: 100px;
+}
+
+.home {
+  text-align: center;
+}
+
+.likeButton {
+  background-color: white;
+  /* border: thin solid #4F46E5; */
+  border: none;
+  font-size: x-large;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.viewCommentButton{
+  background-color: white;
+  border: none;
+  font-size: x-large;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+
+.userPhoto {
+  width: 35px;
+  border-radius: 35px;
+  border: 2px solid #4F46E5;
+
+}
+
+.usernameandpic {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  font-size: 17px;
+}
+
+.postCard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 600px;
+  margin: 35px auto;
+  text-align: left;
+ 
+}
+
+.postImage {
+  width: 550px;
+  max-height: 600px;
+  display: block;
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: contain;
+}
+.commentbubble{
+  background-color: #ededed;
+  width: fit-content;
+  max-width: 450px;
+  padding:10px 20px;
+  margin: 5px 0px;
+  margin-left: 5px;
+  word-wrap: break-word;
+  border-radius: 3px;
+  display: inline-block;
+  
+}
+/* .commentbubble:first-child{
+  margin-top: 50px;
+} */
+
+.displaycomments{
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom: 0;
+  display: flex;
+  background-color: rgba(0,0,0,0.4);
+}
+.commentBox{
+  background:white;
+  width: 600px;
+  height: 500px;
+  margin:auto;
+  overflow-x: hidden;
+  position: relative;;
+}
+.wrapperExit{
+  position:absolute;
+  top:10px;
+  right:38px;
+}
+.exitButton{
+  position:fixed;
+  border: none;
+  background-color: white;
+  font-size:x-large ;
+   color: gray;
+ 
+}
+.exitButton:hover{
+  color: #4F46E5;
+}
+.commentUserPic{
+  display: inline-block;
+  width: 35px;
+  border-radius: 35px;
+  margin-left: 5px;
+}
+.commentInput{
+  height: 70px;
+  width: 500px;
+  font-family: 'Rubik', sans-serif;
+  resize: none;
+  
+}
+.commentInput:focus{
+  outline: none;
+}
+.addCommentBox{
+  position:fixed ;
+  background-color: white;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+.wrapperCommentBox{
+  position:absolute;
+  bottom: 40px;
+
+}
+.commentButton{
+  background-color: white;
+  border: none;
+  font-size: x-large;
+  color:#4F46E5;
+
+}
+.commentButton:disabled{
+  color:lightgray;
+}
+.commentBubbleContainer{
+  display: flex;
+  align-items:center ;
+
+}
+/* Image input styling starts */
+input[type="file"]::file-selector-button{
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  font-family: 'Rubik', sans-serif;
+ 
+}
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
+}
+input[type="file"] {
+  position: relative;
+  
+  
+}
+
+input[type="file"]::file-selector-button {
+  width: 136px;
+  color: transparent;
+}
+input[type="file"]::before {
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 16px;
+  height: 20px;
+  width: 20px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  color:#4F46E5;
+}
+
+
+input[type="file"]::after {
+  position: absolute;
+  pointer-events: none;
+  top: 13px;
+  left: 40px;
+  color:#4F46E5;
+  content: "Upload Image  ";
+}
+/* Image input styling ends */
+.confirmIcon{
+  font-size: 70px;
+  color:#15CB76;
+  margin-top: 50px;
+}
+.goHomeButton{
+  padding: 8px 15px;
+  font-size: larger;
+  font-family: 'Rubik', sans-serif;
+  margin: auto;
+  border-radius: 55px;
+ 
+  background-color: #4F46E5;
+  border:2px solid white;
+  color:white;
+  cursor: pointer;
+}
+.welcomePage{
+  height: 100vh;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/react-website-ee6d0.appspot.com/o/background%2Flayered-waves-haikei%20(3).svg?alt=media&token=1e9c0a78-e1a0-4d3e-9a23-c279ba905a9d");
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:absolute;
+  width: 100vw;
+  
+}
+.welcomeHeading{
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 100px;
+  margin-top: -10px;
+}
+.welcomeSubHeading{
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 40px;
+  margin-top: -45px;
+}
+.signinButton{
+  padding: 7px 16px;
+  font-size: large;
+  font-family: 'Rubik', sans-serif;
+  margin: auto;
+  border-radius: 55px;
+ 
+  background-color: #4F46E5;
+  border:2px solid white;
+  color:white; font-family: 'Space Grotesk', sans-serif;
+}
+.signinButton:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #4F46E5;
+}

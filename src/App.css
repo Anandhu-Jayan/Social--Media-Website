@@ -327,13 +327,14 @@ input[type="file"]::after {
   cursor: pointer;
 }
 .welcomePage{
-  height: 100vh;
+  height: 89vh;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/react-website-ee6d0.appspot.com/o/background%2Flayered-waves-haikei%20(3).svg?alt=media&token=1e9c0a78-e1a0-4d3e-9a23-c279ba905a9d");
   margin: 0;
   background-repeat: no-repeat;
   background-size: cover;
   position:absolute;
   width: 100vw;
+
   
 }
 .welcomeHeading{
